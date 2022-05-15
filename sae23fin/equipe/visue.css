@@ -1,0 +1,195 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: arial;
+  background: linear-gradient(120deg,#161816,#4BA247);
+  height: 100vh;
+}
+.scroll-bg h1{
+  text-align: center;
+  padding: 0 0 20px 0;
+  border-bottom: 1px solid silver;
+  color: white;
+}
+.scroll-div {
+  width: 800px;
+  background-color: white;
+  height: 400px;
+  overflow: hidden;
+  overflow-y: scroll;
+  overflow-x: scroll;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+nav > ul {
+	margin : 0px;
+	padding : 0px;
+}
+
+nav > ul::after{
+	content: "";
+	display : black;
+	clear : both;
+	
+}
+
+nav > ul > li {
+	float : left;
+	position : relative;
+}
+
+nav > ul > li > a {
+	padding: 20px 30px;
+	color :#424558;
+}
+
+nav li{
+	list-style-type: none;
+}
+
+.submenu{
+	display: none;
+}
+
+.subequipe{
+	display: none;
+}
+
+nav a {
+	display : inline-block;
+	text-decoration: none;
+}
+
+nav > ul > li:hover a {
+	padding: 15px 30px 20px 30px;
+}
+
+nav li:hover .submenu{
+	display: inline-block;
+	position: absolute;
+	top : 100%;
+	left: 0px;
+	padding: 0px;
+	z-index: 1000;
+	
+}
+
+nav li:hover .subequipe{
+	display: inline-block;
+	position: absolute;
+	top : 100%;
+	left: 0px;
+	padding: 0px;
+	z-index: 1000;
+}
+
+.submenu li {
+	border-bottom: 1px solid #CCC;	
+}
+
+.subequipe li {
+	border-bottom: 1px solid #CCC;	
+}
+
+.subequipe li a {
+	padding: 15px 10px ;
+	font-size : 13px;
+	color: #222538;
+	width: 240px ;
+}
+
+.submenu li a{
+	padding: 15px 30px ;
+	font-size : 13px;
+	color: #222538;
+	width: 240px ;
+}
+
+.menu:hover{
+	border-top: 5px solid #cd040b;
+	background-color: RGBa(209, 0, 28, 0.15);
+}
+
+.accueil:hover{
+	border-top: 5px solid #000080;
+	background-color: RGBa(2, 7, 93, 0.15);
+}
+
+.equipe:hover{
+	border-top: 5px solid #0fc0fc;
+	background-color: RGBa(0, 204, 255, 0.15);
+}
+
+.trajet:hover{
+	border-top: 5px solid #fd0e35;
+	background-color: RGBa(253, 14, 53, 0.15);
+}
+
+.equipe .subequipe{
+	background-color: RGB(75, 162, 71);
+}
+
+.menu .submenu{
+	background-color: RGB(75, 162, 71);
+}
+
+.subequipe li:hover a {
+	color: #DDD;
+	font-weight:bold;
+}
+
+.submenu li:hover a {
+	color: #EEE;
+	font-weight: bold;
+}
+
+.equipe .subequipe li:hover {
+	background-color: RGB(8, 8, 8);
+	
+}
+
+.menu .submenu li:hover{
+	background-color: RGB(8, 8,8);
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(90deg,#161816,#4BA247);
+}
+
+.navbar{
+	height: 80px;
+	width: 100%;
+}
+
+.logo{
+	width: 60px;
+	height: auto;
+	padding: 10px 10px;
+    float: left;
+}
+
+.navbar ul{
+	float: right;
+	margin-right: 20px;
+}
+
+.navbar ul li{
+	list-style: none;
+	margin: 3 8px;
+	display: inline-block;
+	line-height: 20px;
+}
+
+.navbar ul li a{
+	text-decoration: none;
+	color: white;
+	font-size: 15px;
+	padding: 20px 33px;
+	transition: .4s;
+	font-family: arial;
+}
